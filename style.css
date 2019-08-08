@@ -1,0 +1,88 @@
+/* raleway-regular - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/raleway-v14-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Raleway'), local('Raleway-Regular'),
+         url('../fonts/raleway-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v14-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+  }
+.custom-button{
+    background-color: #660099;
+    color: #ffffff;
+    border-radius: 40px;
+    float: right;
+    border: none;
+    height: 30px;
+    width: 65px;
+    margin: 3px 5px;
+}
+body, html{
+    padding: 0;
+    margin: 0;
+    font-family: Raleway;
+    background: #000000;
+
+}
+#bgvideo{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background: "media/wallpaper.jpg";
+    background-size: cover;
+}
+#custom{
+    background: #660099;
+    color: #ffffff;
+    border: none;
+    border-radius: 14px;
+    width: 80px;
+    height: 30px;`
+    align-content: center;
+    padding: 3px 0px;
+    font-family: Raleway;
+}
+#custom:hover{
+   
+    
+    align-content: center;
+    padding: 3px 0px;
+    width: 80px;
+    height: 30px;`
+    
+}
+#custom-link a{
+    color: #ffffff;
+    font-family: Raleway;
+    text-align: center;
+}
+#custom-link a:hover{
+    
+}
+#custom-bg{
+    background-color: #000000;
+}
+#custom-font{
+    font-family: Raleway;
+}
+#section-head{
+    font-family: Raleway;
+    text-align: center;
+    display: block;
+    color: #ffffff;
+}
+.custom-content{
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: justify;
+
+}
+#more{
+    display: none;
+}
