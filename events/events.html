@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="bootstrap-min.css">
+	<link rel="stylesheet" href="style-events.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- event row 1 start here -->
+	<div class="row-events">
+		<div class="col-events">
+				<img id="events-img11" src="images/football.jpg" alt="Football" class="event-img">		
+				<div class="event-name"> 
+					Football
+				</div>
+		</div>
+		
+		<div class="col-events"> 
+			<img id="events-img12" src="images/cricket.jpg" alt="cricket" class="event-img">
+			<div class="event-name"> 
+				 Cricket
+			</div>
+			
+		</div>
+
+		<div class="col-events"> 
+		<img id="events-img13" src="images/ath.jpg" alt="atheletics" class="event-img">
+			<div class="event-name"> 
+			 Atheletics
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+		
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4> Football </h4>
+         </div>
+        <div class="modal-body" >
+          <img src="images/football.jpg" alt="football Image" class="modal-image">
+        </div>
+        <div class="modal-footer">
+			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
+		    <button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Result</button>
+			<button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Schedule</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+		
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4> Cricket </h4>
+         </div>
+        <div class="modal-body" >
+          <img src="images/cricket.jpg" alt="football Image" class="modal-image">
+        </div>
+        <div class="modal-footer">
+			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
+		    <button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Result</button>
+			<button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Schedule</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+		
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4> Running </h4>
+         </div>
+        <div class="modal-body" >
+          <img src="images/ath.jpg" alt="football Image" class="modal-image">
+        </div>
+        <div class="modal-footer">
+			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
+		    <button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Result</button>
+			<button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Schedule</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+<script>
+$(document).ready(function(){
+  $("#events-img11").click(function(){
+    $("#myModal1").modal();
+  });
+});
+$(document).ready(function(){
+  $("#events-img12").click(function(){
+    $("#myModal2").modal();
+  });
+});
+$(document).ready(function(){
+  $("#events-img13").click(function(){
+    $("#myModal3").modal();
+  });
+});
+</script>
+<!-- event row 1 end here -->
+
+
+<!-- event row 2 start here -->
+	<div class="row-events">
+		<div class="col-events">
+				<img id="events-img21" src="images/football.jpg" alt="Football" class="event-img">		
+				<div class="event-name"> 
+					Football
+				</div>
+		</div>
+		
+		<div class="col-events"> 
+			<img id="events-img22" src="images/cricket.jpg" alt="cricket" class="event-img">
+			<div class="event-name"> 
+				 Cricket
+			</div>
+			
+		</div>
+
+		<div class="col-events"> 
+		<img id="events-img23" src="images/ath.jpg" alt="atheletics" class="event-img">
+			<div class="event-name"> 
+			 Atheletics
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+		
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4> Football </h4>
+         </div>
+        <div class="modal-body" >
+          <img src="images/football.jpg" alt="football Image" class="modal-image">
+        </div>
+        <div class="modal-footer">
+			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
+		    <button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Result</button>
+			<button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Schedule</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+		
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4> Cricket </h4>
+         </div>
+        <div class="modal-body" >
+          <img src="images/cricket.jpg" alt="football Image" class="modal-image">
+        </div>
+        <div class="modal-footer">
+			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
+		    <button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Result</button>
+			<button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Schedule</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+		
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4> Running </h4>
+         </div>
+        <div class="modal-body" >
+          <img src="images/ath.jpg" alt="football Image" class="modal-image">
+        </div>
+        <div class="modal-footer">
+			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
+		    <button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Result</button>
+			<button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Schedule</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+<script>
+$(document).ready(function(){
+  $("#events-img11").click(function(){
+    $("#myModal1").modal();
+  });
+});
+$(document).ready(function(){
+  $("#events-img12").click(function(){
+    $("#myModal2").modal();
+  });
+});
+$(document).ready(function(){
+  $("#events-img13").click(function(){
+    $("#myModal3").modal();
+  });
+});
+</script>
+<!-- event row 2 end here -->
+
+
+<!-- event row 3 start here -->
+	<div class="row-events">
+		<div class="col-events">
+				<img id="events-img11" src="images/football.jpg" alt="Football" class="event-img">		
+				<div class="event-name"> 
+					Football
+				</div>
+		</div>
+		
+		<div class="col-events"> 
+			<img id="events-img12" src="images/cricket.jpg" alt="cricket" class="event-img">
+			<div class="event-name"> 
+				 Cricket
+			</div>
+			
+		</div>
+
+		<div class="col-events"> 
+		<img id="events-img13" src="images/ath.jpg" alt="atheletics" class="event-img">
+			<div class="event-name"> 
+			 Atheletics
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+		
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4> Football </h4>
+         </div>
+        <div class="modal-body" >
+          <img src="images/football.jpg" alt="football Image" class="modal-image">
+        </div>
+        <div class="modal-footer">
+			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
+		    <button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Result</button>
+			<button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Schedule</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+		
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4> Cricket </h4>
+         </div>
+        <div class="modal-body" >
+          <img src="images/cricket.jpg" alt="football Image" class="modal-image">
+        </div>
+        <div class="modal-footer">
+			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
+		    <button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Result</button>
+			<button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Schedule</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+		
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4> Running </h4>
+         </div>
+        <div class="modal-body" >
+          <img src="images/ath.jpg" alt="football Image" class="modal-image">
+        </div>
+        <div class="modal-footer">
+			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
+		    <button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Result</button>
+			<button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Schedule</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+<script>
+$(document).ready(function(){
+  $("#events-img11").click(function(){
+    $("#myModal1").modal();
+  });
+});
+$(document).ready(function(){
+  $("#events-img12").click(function(){
+    $("#myModal2").modal();
+  });
+});
+$(document).ready(function(){
+  $("#events-img13").click(function(){
+    $("#myModal3").modal();
+  });
+});
+</script>
+<!-- event row 3 end here -->
+</body>
+</html>
