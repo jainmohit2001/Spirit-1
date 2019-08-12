@@ -33,7 +33,7 @@
             <nav class="cl-effect-5 ml-auto">
             <div class=" cl-effect-5 navbar-nav ml-auto" id="custom-link">
               <a class="nav-item nav-link active" href="#">Home </a>
-              <a class="nav-item nav-link" href="#">About</a>
+              <a class="nav-item nav-link" href="#about-info">About</a>
               <a class="nav-item nav-link" href="#">Team</a>
               <a class="nav-item nav-link" href="#">Gallery</a>
               <a class="nav-item nav-link" href="#">Contact Us</a>
@@ -62,7 +62,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-    <section>
+    <section id="about-info">
     <div class="container-fluid bg-black">
         <div class="row" id="cusotm-font" style="padding: 0px 80px">
       <div class="col-md-12 text-center">
@@ -70,22 +70,27 @@
           <h1 id="section-head">About Us</h1>
         </div>
       </div>
+      <section class="custom-sec">
         <div class="col-md-12">
           <div class="row" id="cusotm-font" style="padding: 0px 70px">
           <p class="custom-content">Spirit is the annual sports festival of IIT Guwahati. Through its inception, Spirit has served as a great 
-            platform for budding sports enthusiasts<span id="dots">...</span><span id="more"> and also recognizing great talents in different sporting events by taking a leap forward in redefining 
+            platform for budding sports enthusiasts and also recognizing great talents in different sporting events by taking a leap forward in redefining 
             the spirit of sports. 
             IIT Guwahati is furnished with excellent sports facilities. Spirit provides __ games along with a huge participations from all over the country. 
             Over ____ participants take part in this 3 day quest to know and challenge themselves. The fest also presents a chance to meet sports celebraties in pro nights and motivational talks .
-          </span>  
+            
           </p>
           
-          <button onclick="myFunction()" id="myBtn">Continue reading</button>
+          
           </div>
         </div>
+      </section>
       </div>
-  
-  </section>
+      </section>
+      <script src="js/smooth-scroll.js"></script>
+      <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+      </script>
   <script>
       function myFunction() {
         var dots = document.getElementById("dots");
