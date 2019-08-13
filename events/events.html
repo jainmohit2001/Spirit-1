@@ -5,8 +5,41 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="bootstrap-min.css">
 	<link rel="stylesheet" href="style-events.css">
+	<link href="1/ninja-slider.css" rel="stylesheet" type="text/css" />
+    <script src="1/ninja-slider.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+        body {font: normal 0.9em Arial;margin:0;}
+        a {color:#1155CC;}
+        ul li {padding: 10px 0;}
+        header {display:block;padding:60px 0 10px;background-color:#19191900;text-align:center;}
+        header a {
+            font-family: sans-serif;
+            font-size: 24px;
+            line-height: 24px;
+            padding: 8px 13px 7px;
+            color: #4d5256;
+            text-decoration:none;
+            transition: color 0.7s;
+        }
+        header a.active {
+            font-weight:bold;
+            width: 24px;
+            height: 24px;
+            padding: 4px;
+            text-align: center;
+            display:inline-block;
+            border-radius: 50%;
+            background: #4d5256;
+            color: #191919;
+        }
+		.gallery-name {
+			text-align: center;
+			position: relative;
+			color: black;
+		}
+    </style>
 </head>
 <body>
 <!-- event row 1 start here -->
@@ -125,28 +158,28 @@ $(document).ready(function(){
 <!-- event row 2 start here -->
 	<div class="row-events">
 		<div class="col-events">
-				<img id="events-img21" src="images/football.jpg" alt="Football" class="event-img">		
+				<img id="events-img21" src="images/table-tennis.jpg" alt="Table Tennis" class="event-img">		
 				<div class="event-name"> 
-					Football
+					Table Tennis
 				</div>
 		</div>
 		
 		<div class="col-events"> 
-			<img id="events-img22" src="images/cricket.jpg" alt="cricket" class="event-img">
+			<img id="events-img22" src="images/volleyball.jpg" alt="Volleyball" class="event-img">
 			<div class="event-name"> 
-				 Cricket
+				 Volleyball
 			</div>
 			
 		</div>
 
 		<div class="col-events"> 
-		<img id="events-img23" src="images/ath.jpg" alt="atheletics" class="event-img">
+		<img id="events-img23" src="images/lawn-tennis.jpg" alt="Lawn tennis" class="event-img">
 			<div class="event-name"> 
-			 Atheletics
+			Lawn tennis
 			</div>
 		</div>
 	</div>
-	<div class="modal fade" id="myModal1" role="dialog">
+	<div class="modal fade" id="myModal21" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
@@ -154,10 +187,10 @@ $(document).ready(function(){
         <div class="modal-header" >
 		
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-		  <h4> Football </h4>
+		  <h4> Table Tennis </h4>
          </div>
         <div class="modal-body" >
-          <img src="images/football.jpg" alt="football Image" class="modal-image">
+          <img src="images/table-tennis.jpg" alt="Table Tennis Image" class="modal-image">
         </div>
         <div class="modal-footer">
 			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
@@ -169,7 +202,7 @@ $(document).ready(function(){
       
     </div>
   </div> 
-  <div class="modal fade" id="myModal2" role="dialog">
+  <div class="modal fade" id="myModal22" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
@@ -177,10 +210,10 @@ $(document).ready(function(){
         <div class="modal-header" >
 		
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-		  <h4> Cricket </h4>
+		  <h4> Volleyball</h4>
          </div>
         <div class="modal-body" >
-          <img src="images/cricket.jpg" alt="football Image" class="modal-image">
+          <img src="images/volleyball.jpg" alt="Volleyball Image" class="modal-image">
         </div>
         <div class="modal-footer">
 			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
@@ -192,7 +225,7 @@ $(document).ready(function(){
       
     </div>
   </div> 
-  <div class="modal fade" id="myModal3" role="dialog">
+  <div class="modal fade" id="myModal23" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
@@ -200,10 +233,10 @@ $(document).ready(function(){
         <div class="modal-header" >
 		
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-		  <h4> Running </h4>
+		  <h4> Lawn-tennis </h4>
          </div>
         <div class="modal-body" >
-          <img src="images/ath.jpg" alt="football Image" class="modal-image">
+          <img src="images/lawn-tennis.jpg" alt="Lawn-Tennis Image" class="modal-image">
         </div>
         <div class="modal-footer">
 			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
@@ -217,18 +250,18 @@ $(document).ready(function(){
   </div> 
 <script>
 $(document).ready(function(){
-  $("#events-img11").click(function(){
-    $("#myModal1").modal();
+  $("#events-img21").click(function(){
+    $("#myModal21").modal();
   });
 });
 $(document).ready(function(){
-  $("#events-img12").click(function(){
-    $("#myModal2").modal();
+  $("#events-img22").click(function(){
+    $("#myModal22").modal();
   });
 });
 $(document).ready(function(){
-  $("#events-img13").click(function(){
-    $("#myModal3").modal();
+  $("#events-img23").click(function(){
+    $("#myModal23").modal();
   });
 });
 </script>
@@ -238,28 +271,28 @@ $(document).ready(function(){
 <!-- event row 3 start here -->
 	<div class="row-events">
 		<div class="col-events">
-				<img id="events-img11" src="images/football.jpg" alt="Football" class="event-img">		
+				<img id="events-img31" src="images/badminton.jpg" alt="Badminton" class="event-img">		
 				<div class="event-name"> 
-					Football
+					Badminton
 				</div>
 		</div>
 		
 		<div class="col-events"> 
-			<img id="events-img12" src="images/cricket.jpg" alt="cricket" class="event-img">
+			<img id="events-img32" src="images/chess.jpg" alt="Chess" class="event-img">
 			<div class="event-name"> 
-				 Cricket
+				 Chess
 			</div>
 			
 		</div>
 
 		<div class="col-events"> 
-		<img id="events-img13" src="images/ath.jpg" alt="atheletics" class="event-img">
+		<img id="events-img33" src="images/hockey.jpg" alt="Hockey" class="event-img">
 			<div class="event-name"> 
-			 Atheletics
+			 Hockey
 			</div>
 		</div>
 	</div>
-	<div class="modal fade" id="myModal1" role="dialog">
+	<div class="modal fade" id="myModal31" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
@@ -267,10 +300,10 @@ $(document).ready(function(){
         <div class="modal-header" >
 		
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-		  <h4> Football </h4>
+		  <h4> Badminton </h4>
          </div>
         <div class="modal-body" >
-          <img src="images/football.jpg" alt="football Image" class="modal-image">
+          <img src="images/badminton.jpg" alt="Badminton Image" class="modal-image">
         </div>
         <div class="modal-footer">
 			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
@@ -282,7 +315,7 @@ $(document).ready(function(){
       
     </div>
   </div> 
-  <div class="modal fade" id="myModal2" role="dialog">
+  <div class="modal fade" id="myModal32" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
@@ -290,10 +323,10 @@ $(document).ready(function(){
         <div class="modal-header" >
 		
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-		  <h4> Cricket </h4>
+		  <h4> Chess </h4>
          </div>
         <div class="modal-body" >
-          <img src="images/cricket.jpg" alt="football Image" class="modal-image">
+          <img src="images/chess.jpg" alt="Chess Image" class="modal-image">
         </div>
         <div class="modal-footer">
 			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
@@ -305,7 +338,7 @@ $(document).ready(function(){
       
     </div>
   </div> 
-  <div class="modal fade" id="myModal3" role="dialog">
+  <div class="modal fade" id="myModal33" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
@@ -313,10 +346,10 @@ $(document).ready(function(){
         <div class="modal-header" >
 		
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-		  <h4> Running </h4>
+		  <h4> Hockey </h4>
          </div>
         <div class="modal-body" >
-          <img src="images/ath.jpg" alt="football Image" class="modal-image">
+          <img src="images/hockey.jpg" alt="Hockey Image" class="modal-image">
         </div>
         <div class="modal-footer">
 			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
@@ -330,21 +363,265 @@ $(document).ready(function(){
   </div> 
 <script>
 $(document).ready(function(){
-  $("#events-img11").click(function(){
-    $("#myModal1").modal();
+  $("#events-img31").click(function(){
+    $("#myModal31").modal();
   });
 });
 $(document).ready(function(){
-  $("#events-img12").click(function(){
-    $("#myModal2").modal();
+  $("#events-img32").click(function(){
+    $("#myModal32").modal();
   });
 });
 $(document).ready(function(){
-  $("#events-img13").click(function(){
-    $("#myModal3").modal();
+  $("#events-img33").click(function(){
+    $("#myModal33").modal();
   });
 });
 </script>
 <!-- event row 3 end here -->
+
+
+<!-- event row 4 start here -->
+	<div class="row-events">
+		<div class="col-events">
+				<img id="events-img41" src="images/badminton.jpg" alt="Badminton" class="event-img">		
+				<div class="event-name"> 
+					Badminton
+				</div>
+		</div>
+		
+		<div class="col-events"> 
+			<img id="events-img42" src="images/chess.jpg" alt="Chess" class="event-img">
+			<div class="event-name"> 
+				 Chess
+			</div>
+			
+		</div>
+
+		<div class="col-events"> 
+		<img id="events-img43" src="images/hockey.jpg" alt="Hockey" class="event-img">
+			<div class="event-name"> 
+			 Hockey
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal41" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+		
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4> Badminton </h4>
+         </div>
+        <div class="modal-body" >
+          <img src="images/badminton.jpg" alt="Badminton Image" class="modal-image">
+        </div>
+        <div class="modal-footer">
+			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
+		    <button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Result</button>
+			<button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Schedule</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+  <div class="modal fade" id="myModal42" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+		
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4> Chess </h4>
+         </div>
+        <div class="modal-body" >
+          <img src="images/chess.jpg" alt="Chess Image" class="modal-image">
+        </div>
+        <div class="modal-footer">
+			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
+		    <button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Result</button>
+			<button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Schedule</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+  <div class="modal fade" id="myModal43" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+		
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4> Hockey </h4>
+         </div>
+        <div class="modal-body" >
+          <img src="images/hockey.jpg" alt="Hockey Image" class="modal-image">
+        </div>
+        <div class="modal-footer">
+			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
+		    <button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Result</button>
+			<button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Schedule</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+<script>
+$(document).ready(function(){
+  $("#events-img41").click(function(){
+    $("#myModal41").modal();
+  });
+});
+$(document).ready(function(){
+  $("#events-img42").click(function(){
+    $("#myModal42").modal();
+  });
+});
+$(document).ready(function(){
+  $("#events-img43").click(function(){
+    $("#myModal43").modal();
+  });
+});
+</script>
+<!-- event row 4 end here -->
+
+
+<!-- event row 5 start here -->
+	<div class="row-events">
+		<div class="col-events">
+				
+		</div>
+		
+		<div class="col-events"> 
+			<img id="events-img52" src="images/chess.jpg" alt="Chess" class="event-img">
+			<div class="event-name"> 
+				 Chess
+			</div>
+			
+		</div>
+
+		<div class="col-events"> 
+		
+		</div>
+	</div>
+  <div class="modal fade" id="myModal52" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" >
+		
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4> Chess </h4>
+         </div>
+        <div class="modal-body" >
+          <img src="images/chess.jpg" alt="Chess Image" class="modal-image">
+        </div>
+        <div class="modal-footer">
+			<button type="submit" class="btn btn-danger btn-default pull-left" onclick="window.location.href = 'events.html';"> Register</button>
+		    <button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Result</button>
+			<button type="submit" class="btn btn-danger btn-default pull-left disabled" onclick="window.location.href = 'events.html';"> Schedule</button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+  <
+<script>
+
+$(document).ready(function(){
+  $("#events-img52").click(function(){
+    $("#myModal52").modal();
+  });
+});
+
+</script>
+<!-- event row 5 end here -->
+
+
+<!--start--> 
+    <div id="ninja-slider">
+	
+        <div class="slider-inner">
+            <ul>
+                <li>
+                    <a class="ns-img" href="img/a.jpg"></a>
+                    
+                </li>
+                <li><a class="ns-img" href="img/b.jpg"></a>
+                   
+                </li>
+                <li>
+                    <a href="#"><img class="ns-img" src="img/c.jpg" style="cursor:pointer;" /></a>
+                    
+                </li>
+                <li>
+                    <a class="ns-img" href="img/d.jpg"></a>
+                    
+                </li>
+            </ul>
+            <div class="fs-icon" title="Expand/Close"></div>
+        </div>
+    </div>
+    <!--end-->
+	
+	
+	<div class="footer">
+			<div class="footer-col1">
+				<div class="footer-widget">
+                        <div class="footer-logo">
+                           <img src="images/footer-logo.png" alt="#" />
+                        </div>
+                        <p>Most of our events have hard and easy route choices as we are always keen to encourage new riders.</p>
+                        <ul class="social-icons">
+                           <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                           <li><a class="twitter" href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                </div>
+			</div>
+		
+		<div class="footer-col2">
+			<div class="footer-widget">
+						<h3>Menu</h3>
+                        <ul class="footer-menu">
+                           <li><a href="events.html">About Us</a></li>
+                           <li><a href="events.html">Our Team</a></li>
+                           <li><a href="events.html">Latest News</a></li>
+                           <li><a href="events.html">Recent Matchs</a></li>
+                           <li><a href="events.html">Our Blog</a></li>
+                           <li><a href="events.html">Contact Us</a></li>
+                        </ul>
+            </div>
+		</div>
+		<div class="footer-col3">
+			<div class="footer-widget">
+                        <h3>Contact us</h3>
+                        <ul class="address-list">
+                           <li><i class="fa fa-map-marker"></i> Lorem Ipsum is simply dummy text of the printing..</li>
+                           <li><i class="fa fa-phone"></i> 123 456 7890</li>
+                           <li><i style="font-size:20px;top:5px;" class="fa fa-envelope"></i> demo@gmail.com</li>
+                        </ul>
+            </div>
+		</div>
+		<div class="footer-col4">
+			<div class="contact-footer">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120615.72236587871!2d73.07890527988283!3d19.140910987164396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1527759905404" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                     </div>
+		</div>
+		<div class="footer-bottom">
+            
+               <p>Copyright © 2018 GameInfo.All rights reserved.</p>
+            
+         </div>
+	</div>
 </body>
 </html>
